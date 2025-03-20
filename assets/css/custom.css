@@ -1,0 +1,104 @@
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bfbebe;
+    border-radius: 3px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0c0a0a;
+}
+
+
+
+ .product_window::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+    background-color: #F5F5F5; /* Set the background color of the scrollbar */
+    position: absolute;
+    right: 0; /* Position the scrollbar on the right of the element*/
+ }
+
+.p-dropdown {
+    width: 100%;
+    padding: 4px 8px;
+    border: solid 1px #ddd;
+    font-size: 14px;
+    line-height: 20px;
+    outline: none;
+}
+
+.p-multiselect {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    outline: none;
+}
+
+.p-dropdown .p-dropdown-trigger {
+    width: .75rem !important;
+
+}
+
+.p-multiselect .p-multiselect-trigger {
+    width: 0.75rem;
+    margin-right: 6px;
+}
+
+.p-multiselect .p-multiselect-label {
+    padding: 0.3rem 0.75rem;
+}
+
+
+
+.p-dropdown-filter, .p-multiselect-filter {
+    border: solid 1px #ccc;
+    padding: 1px 8px;
+    margin-bottom: 4px;
+}
+
+.p-dropdown-item, .p-multiselect-item {
+    font-size: 14px;
+    border-radius: none !important;
+    padding: 2px 8px;
+}
+
+.p-dropdown-item:hover {
+    background-color: rgb(252 192 192 / 25%);
+    font-size: 14px;
+}
+
+.p-highlight {
+    border-radius: none !important;
+    background-color: rgb(252 192 192);
+    color: #fff;
+}
+
+/* multiple dropdown */
+.p-multiselect-header {
+    padding: 8px 0 8px 8px;
+    border-bottom: solid 1px #ddd;
+}
+
+.p-checkbox {
+    box-shadow: 0 0 2px green;
+    border-radius: 4px;
+}
+
+/* product stock style */
+.product_stock .p-card-body {
+    padding: 0.75rem !important;
+}
+
+/* .router-link-exact-active {
+    background-color: #eaebeca6;
+} */

@@ -1,0 +1,1727 @@
+---------------------------------------Add New Product---------------------------------------
+
+POST: https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product
+
+body: {
+    "name": "", # Required //string
+    "description": {
+        "time": "",
+        "blocks": [
+            {
+                "id": "", #string
+                "type": "", #string
+                "data": {
+                    "text": "" #longtext,
+                }
+            }
+        ],
+        "version": "2.29.1"
+    },
+    "brand_id": "", #integer
+    "vendor_id": "", #integer
+    "country_id": "", #integer
+    "category": [
+        "", #integer
+        "" #integer
+    ],
+    "district_id": "", #integer
+    "police_station_id": "", #integer
+    "regular_price": "", #double
+    "current_price": "", #double
+    "discount": "", #double
+    "discount_type": "", #integer
+    "icon": "", # image file or base64
+    "feature": "", # image file or base64
+    "gallery": {
+        "0":"", # image file or base64
+        "1":"" # image file or base64
+    },
+    "start_offer": "", # date time
+    "end_offer": "", # date time
+    "stock": "", #integer
+    "minimum_order": "", #integer
+    "status": "", #integer
+    "sizes": "", #string
+    "colors": "", #string
+    "seo_tag": "", #string
+    "seo_description": "", #longtext
+    "shipping": "", #string
+    "shipping_cost": "", #double
+    "payment_method": [],
+    "extend_props": [
+        {
+            "field_name": "Field_Name01", 
+            "field_value": "Value 01 for demo product 02 extra props"
+        },
+        {
+            "field_name": "FieldName_01",
+            "field_value": "Value 02 for demo product 02 extra props"
+        }
+    ]
+}
+
+
+#########<<<<<Response>>>>>#########
+{
+    "status": "Success",
+    "store_data": {
+        "id": 76,
+        "unique_id": "QDABpcizQ702arZ",
+        "category": [
+            114,
+            91
+        ],
+        "brand_id": 1,
+        "vendor_id": 3,
+        "country_id": 18,
+        "district_id": 1,
+        "police_station_id": 496,
+        "name": "Demo Product 02",
+        "slug": "demo_product_02_QDABpcizQ702arZ",
+        "icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+        "icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+        "feature": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+        "feature_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+        "gallery": [
+            "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+            "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+            "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+        ],
+        "gallery_small": [
+            "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+            "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+            "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+        ],
+        "sequence": null,
+        "description": {
+            "time": 1737351896300,
+            "blocks": [
+                {
+                    "id": "xHODxXfvo9",
+                    "type": "paragraph",
+                    "data": {
+                        "text": "This is a test description for demo product 02"
+                    }
+                }
+            ],
+            "version": "2.29.1"
+        },
+        "attributes": {
+            "colors": "White,Black",
+            "sizes": "S_40,M_42,L_44"
+        },
+        "minimum_order": 2,
+        "start_offer": "2024-12-31 18:00:37",
+        "end_offer": "2025-01-30 18:00:37",
+        "extend_props": [
+            {
+                "product_id": 76,
+                "field_name": "fieldname_01",
+                "value": "Value 01 for demo product 02 extra props"
+            },
+            {
+                "product_id": 76,
+                "field_name": "field_name01",
+                "value": "Value 02 for demo product 02 extra props"
+            }
+        ],
+        "status": 1,
+        "shipping_cost": null,
+        "regular_price": 399,
+        "current_price": 299,
+        "discount": null,
+        "discount_type": 1,
+        "stock": 17,
+        "seo_tag": "Demo,Premium,Super,Trending",
+        "seo_description": "This is a seo short description for demo product 02",
+        "additional": [
+            {
+                "id": 192,
+                "additional_key": "76_white_s_40",
+                "product_id": 76,
+                "unique_id": "76_white_s_40",
+                "slug": "76_white",
+                "color": "White",
+                "size": "S_40",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 193,
+                "additional_key": "76_white_m_42",
+                "product_id": 76,
+                "unique_id": "76_white_m_42",
+                "slug": "76_white",
+                "color": "White",
+                "size": "M_42",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 194,
+                "additional_key": "76_white_l_44",
+                "product_id": 76,
+                "unique_id": "76_white_l_44",
+                "slug": "76_white",
+                "color": "White",
+                "size": "L_44",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 195,
+                "additional_key": "76_black_s_40",
+                "product_id": 76,
+                "unique_id": "76_black_s_40",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "S_40",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 196,
+                "additional_key": "76_black_m_42",
+                "product_id": 76,
+                "unique_id": "76_black_m_42",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "M_42",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 197,
+                "additional_key": "76_black_l_44",
+                "product_id": 76,
+                "unique_id": "76_black_l_44",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "L_44",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            }
+        ],
+        "shipping": null,
+        "payment_method": [],
+        "created_by": {
+            "id": 1,
+            "role_id": 1,
+            "country_id": 18,
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "extend_props": {
+                "address": null,
+                "city_id": 1,
+                "thana_id": 494
+            },
+            "email_verified_at": null,
+            "created_at": "2023-09-16T20:19:46.000000Z",
+            "updated_at": "2025-01-07T14:41:12.000000Z",
+            "unique_id": "8660998812",
+            "otp": 874613,
+            "status": 1,
+            "description": null,
+            "created_by": 0,
+            "updated_by": 0,
+            "deleted_at": null
+        },
+        "updated_by": {
+            "id": 1,
+            "role_id": 1,
+            "country_id": 18,
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "extend_props": {
+                "address": null,
+                "city_id": 1,
+                "thana_id": 494
+            },
+            "email_verified_at": null,
+            "created_at": "2023-09-16T20:19:46.000000Z",
+            "updated_at": "2025-01-07T14:41:12.000000Z",
+            "unique_id": "8660998812",
+            "otp": 874613,
+            "status": 1,
+            "description": null,
+            "created_by": 0,
+            "updated_by": 0,
+            "deleted_at": null
+        },
+        "created_at": "2025-01-20T05:49:00.000000Z",
+        "updated_at": "2025-01-20T05:49:00.000000Z",
+        "deleted_at": null,
+        "categories": [
+            {
+                "id": 114,
+                "unique_id": "8ghtcbgg3yKFoM5",
+                "parent_id": 0,
+                "name": "Mobile",
+                "slug": "mobile_8ghtcbgg3yKFoM5",
+                "sequence": null,
+                "commission": 0,
+                "commission_type": "fixed",
+                "icon": null,
+                "thumbnails": null,
+                "banner": null,
+                "description": "mobile",
+                "status": 0,
+                "extend_props": {
+                    "sidebar": "menu"
+                },
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2024-11-10T10:32:26.000000Z",
+                "updated_at": "2024-11-10T10:32:26.000000Z",
+                "pivot": {
+                    "product_id": 76,
+                    "category_id": 114
+                }
+            },
+            {
+                "id": 91,
+                "unique_id": "KKL367124890",
+                "parent_id": 0,
+                "name": "Accessories",
+                "slug": "accessories",
+                "sequence": 0,
+                "commission": 150,
+                "commission_type": "fixed",
+                "icon": null,
+                "thumbnails": null,
+                "banner": null,
+                "description": "Accessories",
+                "status": 1,
+                "extend_props": null,
+                "created_by": 10,
+                "updated_by": 10,
+                "created_at": "2023-01-17T04:41:05.000000Z",
+                "updated_at": "2023-01-17T04:41:05.000000Z",
+                "pivot": {
+                    "product_id": 76,
+                    "category_id": 91
+                }
+            }
+        ],
+        "additional_media": [
+            {
+                "id": 108,
+                "product_id": 76,
+                "slug": "76_white",
+                "color_icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+                "color_icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+                "color_thumbnails_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+                "color_thumbnails": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+                "color_galleries": [
+                    "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                    "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                    "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+                ],
+                "color_galleries_small": [
+                    "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                    "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                    "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+                ]
+            },
+            {
+                "id": 109,
+                "product_id": 76,
+                "slug": "76_black",
+                "color_icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+                "color_icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+                "color_thumbnails_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+                "color_thumbnails": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+                "color_galleries": [
+                    "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                    "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                    "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+                ],
+                "color_galleries_small": [
+                    "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                    "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                    "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+                ]
+            }
+        ],
+        "brand": {
+            "id": 1,
+            "unique_id": "sLJvIENyg100Pxk",
+            "parent_id": null,
+            "name": "Itel",
+            "slug": "itel",
+            "banner": "https://lh3.googleusercontent.com/d/1DCjwkGGGlcNG_Kp0SmJTou4lb-T7qvlN",
+            "icon": "https://lh3.googleusercontent.com/d/1no2rBnsY5n4heay10UwDhqJtCpuwZOSm",
+            "thumbnails": "https://lh3.googleusercontent.com/d/1sAx_4uHpjJiUnoHK_x8YD3TFVQQdWBTl",
+            "commission": 10,
+            "commission_type": "fixed",
+            "status": 1,
+            "description": "this is description",
+            "extend_props": {
+                "test": "theis extend props",
+                "test2": "theis extend props 02"
+            },
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-03-16T16:25:43.000000Z",
+            "updated_at": "2024-11-03T00:46:27.000000Z"
+        },
+        "vendor": {
+            "id": 3,
+            "unique_id": "CVELejvhLEhWLi7",
+            "user_id": null,
+            "name": "Sami",
+            "slug": "sami",
+            "icon": null,
+            "thumbnails": null,
+            "banner": null,
+            "description": null,
+            "status": 1,
+            "extend_props": [],
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-06T14:03:23.000000Z",
+            "updated_at": "2025-01-06T14:03:36.000000Z"
+        },
+        "country": {
+            "id": 18,
+            "sortname": "BD",
+            "name": "Bangladesh",
+            "status": 1,
+            "phonecode": 880,
+            "added_by": 1,
+            "updated_by": 1,
+            "created_at": null,
+            "updated_at": null
+        },
+        "district": {
+            "id": 1,
+            "country_id": 18,
+            "name": "Dhaka",
+            "bn_name": "ঢাকা",
+            "lat": "23.7115253",
+            "lon": "90.4111451",
+            "website": "www.dhaka.gov.bd",
+            "created_at": "2015-09-12T16:33:27.000000Z",
+            "updated_at": "2015-09-12T16:36:20.000000Z"
+        },
+        "police_station": {
+            "id": 496,
+            "district_id": 1,
+            "name": "Banani",
+            "bn_name": "1",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2020-10-10T02:03:48.000000Z",
+            "updated_at": "2016-04-05T18:48:39.000000Z"
+        },
+        "referrals": [],
+        "feedbacks": [],
+        "bundles": []
+    }
+}
+
+
+---------------------------------------Edit Product---------------------------------------
+
+GET: https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product/{{id}}/edit
+
+headers:{ 
+    "Accept": "application/json"    
+    "Authorization" : `Bearer ${token}`
+}
+
+#########<<<<<Response>>>>>#########
+{
+    "data": {
+        "id": 76,
+        "unique_id": "QDABpcizQ702arZ",
+        "category": [
+            114,
+            91
+        ],
+        "brand_id": 1,
+        "vendor_id": 3,
+        "country_id": 18,
+        "district_id": 1,
+        "police_station_id": 496,
+        "name": "Demo Product 02",
+        "slug": "demo_product_02_QDABpcizQ702arZ",
+        "icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+        "icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+        "feature": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+        "feature_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+        "gallery": [
+            "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+            "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+            "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+        ],
+        "gallery_small": [
+            "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+            "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+            "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+        ],
+        "sequence": null,
+        "description": {
+            "time": 1737351896300,
+            "blocks": [
+                {
+                    "id": "xHODxXfvo9",
+                    "type": "paragraph",
+                    "data": {
+                        "text": "This is a test description for demo product 02"
+                    }
+                }
+            ],
+            "version": "2.29.1"
+        },
+        "attributes": {
+            "colors": "White,Black",
+            "sizes": "S_40,M_42,L_44"
+        },
+        "minimum_order": 2,
+        "start_offer": "2024-12-31 18:00:37",
+        "end_offer": "2025-01-30 18:00:37",
+        "extend_props": [
+            {
+                "product_id": 76,
+                "field_name": "fieldname_01",
+                "value": "Value 01 for demo product 02 extra props"
+            },
+            {
+                "product_id": 76,
+                "field_name": "field_name01",
+                "value": "Value 02 for demo product 02 extra props"
+            }
+        ],
+        "status": 1,
+        "shipping_cost": null,
+        "regular_price": 399,
+        "current_price": 299,
+        "discount": null,
+        "discount_type": 1,
+        "stock": 17,
+        "seo_tag": "Demo,Premium,Super,Trending",
+        "seo_description": "This is a seo short description for demo product 02",
+        "additional": [
+            {
+                "id": 192,
+                "additional_key": "76_white_s_40",
+                "product_id": 76,
+                "unique_id": "76_white_s_40",
+                "slug": "76_white",
+                "color": "White",
+                "size": "S_40",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 193,
+                "additional_key": "76_white_m_42",
+                "product_id": 76,
+                "unique_id": "76_white_m_42",
+                "slug": "76_white",
+                "color": "White",
+                "size": "M_42",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 194,
+                "additional_key": "76_white_l_44",
+                "product_id": 76,
+                "unique_id": "76_white_l_44",
+                "slug": "76_white",
+                "color": "White",
+                "size": "L_44",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 195,
+                "additional_key": "76_black_s_40",
+                "product_id": 76,
+                "unique_id": "76_black_s_40",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "S_40",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 196,
+                "additional_key": "76_black_m_42",
+                "product_id": 76,
+                "unique_id": "76_black_m_42",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "M_42",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            },
+            {
+                "id": 197,
+                "additional_key": "76_black_l_44",
+                "product_id": 76,
+                "unique_id": "76_black_l_44",
+                "slug": "76_black",
+                "color": "Black",
+                "size": "L_44",
+                "regular_price": 399,
+                "current_price": 299,
+                "discount": null,
+                "discount_type": 1,
+                "stock": 0,
+                "status": 1,
+                "stock_status": 1,
+                "color_galleries": null,
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-20T05:49:00.000000Z",
+                "updated_at": "2025-01-20T05:49:00.000000Z"
+            }
+        ],
+        "shipping": null,
+        "payment_method": [],
+        "created_by": {
+            "id": 1,
+            "role_id": 1,
+            "country_id": 18,
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "extend_props": {
+                "address": null,
+                "city_id": 1,
+                "thana_id": 494
+            },
+            "email_verified_at": null,
+            "created_at": "2023-09-16T20:19:46.000000Z",
+            "updated_at": "2025-01-07T14:41:12.000000Z",
+            "unique_id": "8660998812",
+            "otp": 874613,
+            "status": 1,
+            "description": null,
+            "created_by": 0,
+            "updated_by": 0,
+            "deleted_at": null
+        },
+        "updated_by": {
+            "id": 1,
+            "role_id": 1,
+            "country_id": 18,
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "extend_props": {
+                "address": null,
+                "city_id": 1,
+                "thana_id": 494
+            },
+            "email_verified_at": null,
+            "created_at": "2023-09-16T20:19:46.000000Z",
+            "updated_at": "2025-01-07T14:41:12.000000Z",
+            "unique_id": "8660998812",
+            "otp": 874613,
+            "status": 1,
+            "description": null,
+            "created_by": 0,
+            "updated_by": 0,
+            "deleted_at": null
+        },
+        "created_at": "2025-01-20T05:49:00.000000Z",
+        "updated_at": "2025-01-20T05:49:00.000000Z",
+        "deleted_at": null,
+        "categories": [
+            {
+                "id": 114,
+                "unique_id": "8ghtcbgg3yKFoM5",
+                "parent_id": 0,
+                "name": "Mobile",
+                "slug": "mobile_8ghtcbgg3yKFoM5",
+                "sequence": null,
+                "commission": 0,
+                "commission_type": "fixed",
+                "icon": null,
+                "thumbnails": null,
+                "banner": null,
+                "description": "mobile",
+                "status": 0,
+                "extend_props": {
+                    "sidebar": "menu"
+                },
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2024-11-10T10:32:26.000000Z",
+                "updated_at": "2024-11-10T10:32:26.000000Z",
+                "pivot": {
+                    "product_id": 76,
+                    "category_id": 114
+                }
+            },
+            {
+                "id": 91,
+                "unique_id": "KKL367124890",
+                "parent_id": 0,
+                "name": "Accessories",
+                "slug": "accessories",
+                "sequence": 0,
+                "commission": 150,
+                "commission_type": "fixed",
+                "icon": null,
+                "thumbnails": null,
+                "banner": null,
+                "description": "Accessories",
+                "status": 1,
+                "extend_props": null,
+                "created_by": 10,
+                "updated_by": 10,
+                "created_at": "2023-01-17T04:41:05.000000Z",
+                "updated_at": "2023-01-17T04:41:05.000000Z",
+                "pivot": {
+                    "product_id": 76,
+                    "category_id": 91
+                }
+            }
+        ],
+        "additional_media": [
+            {
+                "id": 108,
+                "product_id": 76,
+                "slug": "76_white",
+                "color_icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+                "color_icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+                "color_thumbnails_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+                "color_thumbnails": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+                "color_galleries": [
+                    "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                    "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                    "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+                ],
+                "color_galleries_small": [
+                    "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                    "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                    "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+                ]
+            },
+            {
+                "id": 109,
+                "product_id": 76,
+                "slug": "76_black",
+                "color_icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+                "color_icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+                "color_thumbnails_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+                "color_thumbnails": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+                "color_galleries": [
+                    "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                    "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                    "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+                ],
+                "color_galleries_small": [
+                    "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                    "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                    "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+                ]
+            }
+        ],
+        "brand": {
+            "id": 1,
+            "unique_id": "sLJvIENyg100Pxk",
+            "parent_id": null,
+            "name": "Itel",
+            "slug": "itel",
+            "banner": "https://lh3.googleusercontent.com/d/1DCjwkGGGlcNG_Kp0SmJTou4lb-T7qvlN",
+            "icon": "https://lh3.googleusercontent.com/d/1no2rBnsY5n4heay10UwDhqJtCpuwZOSm",
+            "thumbnails": "https://lh3.googleusercontent.com/d/1sAx_4uHpjJiUnoHK_x8YD3TFVQQdWBTl",
+            "commission": 10,
+            "commission_type": "fixed",
+            "status": 1,
+            "description": "this is description",
+            "extend_props": {
+                "test": "theis extend props",
+                "test2": "theis extend props 02"
+            },
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-03-16T16:25:43.000000Z",
+            "updated_at": "2024-11-03T00:46:27.000000Z"
+        },
+        "vendor": {
+            "id": 3,
+            "unique_id": "CVELejvhLEhWLi7",
+            "user_id": null,
+            "name": "Sami",
+            "slug": "sami",
+            "icon": null,
+            "thumbnails": null,
+            "banner": null,
+            "description": null,
+            "status": 1,
+            "extend_props": [],
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-06T14:03:23.000000Z",
+            "updated_at": "2025-01-06T14:03:36.000000Z"
+        },
+        "country": {
+            "id": 18,
+            "sortname": "BD",
+            "name": "Bangladesh",
+            "status": 1,
+            "phonecode": 880,
+            "added_by": 1,
+            "updated_by": 1,
+            "created_at": null,
+            "updated_at": null
+        },
+        "district": {
+            "id": 1,
+            "country_id": 18,
+            "name": "Dhaka",
+            "bn_name": "ঢাকা",
+            "lat": "23.7115253",
+            "lon": "90.4111451",
+            "website": "www.dhaka.gov.bd",
+            "created_at": "2015-09-12T16:33:27.000000Z",
+            "updated_at": "2015-09-12T16:36:20.000000Z"
+        },
+        "police_station": {
+            "id": 496,
+            "district_id": 1,
+            "name": "Banani",
+            "bn_name": "1",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2020-10-10T02:03:48.000000Z",
+            "updated_at": "2016-04-05T18:48:39.000000Z"
+        },
+        "referrals": [],
+        "feedbacks": [],
+        "bundles": []
+    }
+}
+
+
+---------------------------------------Update Product---------------------------------------
+
+POST: https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product/{{id}}
+ 
+headers:{ 
+    "Accept": "application/json"    
+    "Authorization" : `Bearer ${token}`
+}
+
+body:{
+    "name": "", // Required //string
+    "description": {
+        "time": 12344567,
+        "blocks": [
+            {
+                "id": "xHODxXfvo9",
+                "type": "",
+                "data": {
+                    "text": "" //longtext
+                }
+            }
+        ],
+        "version": "2.29.1"
+    },
+    "brand_id": "", #integer
+    "vendor_id": "", #integer
+    "country_id": "", #integer
+    "category": [
+        114,
+        91
+    ],
+    "district_id": "", #integer
+    "police_station_id": "", #integer
+    "regular_price": "", #double
+    "current_price": "", #double
+    "discount": "", #double
+    "discount_type": "", #integer
+    "icon": "", # image file or base64
+    "feature": "", # image file or base64
+    "gallery": [
+        0: "", # image file or base64
+        1: "", # image file or base64
+    ],
+    "start_offer": "", #date and time
+    "end_offer": "", #date and time
+    "stock": "", #integer
+    "minimum_order": "", #integer
+    "status": "", #integer
+    "sizes": "", #string
+    "colors": "", #string
+    "seo_tag": "", #string
+    "seo_description": "", #string
+    "shipping": "", #string
+    "shipping_cost": "", #double
+    "payment_method": "", #string
+    "extend_props": [
+        {
+            "field_name": "", #string
+            "field_value": "" #string
+        },
+        {
+            "field_name": "", #string
+            "field_value": "" #string
+        }
+    ]
+}
+
+
+---------------------------------------List of Products---------------------------------------
+
+GET: https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product
+headers:{ 
+    "Accept": "application/json"    
+    "Authorization" : `Bearer ${token}`
+}
+
+#########<<<<<Response>>>>>#########
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 76,
+            "unique_id": "BGIit29G9dFFhxX",
+            "category": [
+                114,
+                91
+            ],
+            "brand_id": 1,
+            "vendor_id": 3,
+            "country_id": 18,
+            "district_id": 1,
+            "police_station_id": 496,
+            "name": "Demo Product 02",
+            "slug": "demo_product_02_BGIit29G9dFFhxX",
+            "icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+            "icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+            "feature": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+            "feature_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+            "gallery": [
+                "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+            ],
+            "gallery_small": [
+                "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+            ],
+            "sequence": null,
+            "description": {
+                "time": 1737356783680,
+                "blocks": [
+                    {
+                        "id": "IbkwGuyZRy",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Sampleeee"
+                        }
+                    }
+                ],
+                "version": "2.29.1"
+            },
+            "attributes": {
+                "colors": "White,Black",
+                "sizes": "S_40,M_42,L_44"
+            },
+            "minimum_order": 2,
+            "start_offer": "2024-12-31 18:00:37",
+            "end_offer": "2025-01-30 18:00:37",
+            "extend_props": [],
+            "status": 1,
+            "shipping_cost": null,
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 17,
+            "seo_tag": "Demo,Premium,Super,Trending",
+            "seo_description": "This is a seo short description for demo product 02",
+            "additional": null,
+            "shipping": null,
+            "payment_method": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T05:49:00.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z",
+            "deleted_at": null,
+            "props": [],
+            "brand": {
+                "id": 1,
+                "unique_id": "sLJvIENyg100Pxk",
+                "parent_id": null,
+                "name": "Itel",
+                "slug": "itel",
+                "banner": "https://lh3.googleusercontent.com/d/1DCjwkGGGlcNG_Kp0SmJTou4lb-T7qvlN",
+                "icon": "https://lh3.googleusercontent.com/d/1no2rBnsY5n4heay10UwDhqJtCpuwZOSm",
+                "thumbnails": "https://lh3.googleusercontent.com/d/1sAx_4uHpjJiUnoHK_x8YD3TFVQQdWBTl",
+                "commission": 10,
+                "commission_type": "fixed",
+                "status": 1,
+                "description": "this is description",
+                "extend_props": {
+                    "test": "theis extend props",
+                    "test2": "theis extend props 02"
+                },
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2023-03-16T16:25:43.000000Z",
+                "updated_at": "2024-11-03T00:46:27.000000Z"
+            },
+            "vendor": {
+                "id": 3,
+                "unique_id": "CVELejvhLEhWLi7",
+                "user_id": null,
+                "name": "Sami",
+                "slug": "sami",
+                "icon": null,
+                "thumbnails": null,
+                "banner": null,
+                "description": null,
+                "status": 1,
+                "extend_props": [],
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2025-01-06T14:03:23.000000Z",
+                "updated_at": "2025-01-06T14:03:36.000000Z"
+            },
+            "country": {
+                "id": 18,
+                "sortname": "BD",
+                "name": "Bangladesh",
+                "status": 1,
+                "phonecode": 880,
+                "added_by": 1,
+                "updated_by": 1,
+                "created_at": null,
+                "updated_at": null
+            },
+            "categories": [
+                {
+                    "id": 114,
+                    "unique_id": "8ghtcbgg3yKFoM5",
+                    "parent_id": 0,
+                    "name": "Mobile",
+                    "slug": "mobile_8ghtcbgg3yKFoM5",
+                    "sequence": null,
+                    "commission": 0,
+                    "commission_type": "fixed",
+                    "icon": null,
+                    "thumbnails": null,
+                    "banner": null,
+                    "description": "mobile",
+                    "status": 0,
+                    "extend_props": {
+                        "sidebar": "menu"
+                    },
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2024-11-10T10:32:26.000000Z",
+                    "updated_at": "2024-11-10T10:32:26.000000Z",
+                    "pivot": {
+                        "product_id": 76,
+                        "category_id": 114
+                    }
+                },
+                {
+                    "id": 91,
+                    "unique_id": "KKL367124890",
+                    "parent_id": 0,
+                    "name": "Accessories",
+                    "slug": "accessories",
+                    "sequence": 0,
+                    "commission": 150,
+                    "commission_type": "fixed",
+                    "icon": null,
+                    "thumbnails": null,
+                    "banner": null,
+                    "description": "Accessories",
+                    "status": 1,
+                    "extend_props": null,
+                    "created_by": 10,
+                    "updated_by": 10,
+                    "created_at": "2023-01-17T04:41:05.000000Z",
+                    "updated_at": "2023-01-17T04:41:05.000000Z",
+                    "pivot": {
+                        "product_id": 76,
+                        "category_id": 91
+                    }
+                }
+            ],
+            "district": {
+                "id": 1,
+                "country_id": 18,
+                "name": "Dhaka",
+                "bn_name": "ঢাকা",
+                "lat": "23.7115253",
+                "lon": "90.4111451",
+                "website": "www.dhaka.gov.bd",
+                "created_at": "2015-09-12T16:33:27.000000Z",
+                "updated_at": "2015-09-12T16:36:20.000000Z"
+            },
+            "police_station": {
+                "id": 496,
+                "district_id": 1,
+                "name": "Banani",
+                "bn_name": "1",
+                "created_by": 1,
+                "updated_by": 1,
+                "created_at": "2020-10-10T02:03:48.000000Z",
+                "updated_at": "2016-04-05T18:48:39.000000Z"
+            }
+        },
+        {
+            ..................
+        }
+        
+    ],
+    
+
+    "first_page_url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=1",
+    "from": 1,
+    "last_page": 3,
+    "last_page_url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=3",
+    "links": [
+        {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        },
+        {
+            "url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=1",
+            "label": "1",
+            "active": true
+        },
+        {
+            "url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=2",
+            "label": "2",
+            "active": false
+        },
+        {
+            "url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=3",
+            "label": "3",
+            "active": false
+        },
+        {
+            "url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=2",
+            "label": "Next &raquo;",
+            "active": false
+        }
+    ],
+    "next_page_url": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?page=2",
+    "path": "https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 27
+}
+
+---------------------------------------Query Parameters/Filter Parameters of Products---------------------------------------
+
+limit_per_page = 1 // Default 15
+name = ''
+page = 1 // number of page for pagination
+data = all
+orderBy = desc // desc|asc 
+
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product?limit_per_page=1
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product?name=apple
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product?page=1
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product?data=all&limit_per_page=1&name=admin&page=1
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product?range_from_date=2024-12-31&range_to_date=2025-01-23
+==============================================================================================================================
+GET = https://ecom.coderorbit.com/public/api/admin/vnlroovmejkgbvz/product?current_price_range=1,500
+==============================================================================================================================
+
+body: {
+    "regular_price" : "",
+    "current_price": "",
+    "country_id": "",
+    "extendProps":{
+        "prop_name": "value",
+        
+    },
+    "police_station_id": "",
+    "district_id": "",
+    "vendor_id": "",
+    "brand_id": "",
+    "name": "",
+    "status": "",
+    "dicount_type": "", // Fixed|Parcentage
+    "stock": "",
+    "unit": "",
+    "minimum_order": "",
+ 
+    "range_from_date": "" // Only Date
+    "range_to_date": "" // Only Date
+    "start_offer": "", // only Date
+    "end_offer": "", // Only Date
+ 
+    "range_start_from_offer": "", // Only Date
+    "range_start_to_offer": "", // Only Date
+ 
+    "range_end_from_offer": "", // Only Date
+    "range_end_to_offer": "", // Only Date
+ 
+ 
+    "category": [], // array
+    "regular_price_range": "", // 0,100
+    "current_price_range": "", // 0,100
+ 
+    // or query function
+    "or_regular_price": "",
+    "or_current_price": "",
+    "or_country_id": "",
+    "or_extendProps":{
+        "prop_name": "value",
+        
+    },
+    "or_police_station_id": "",
+    "or_district_id": "",
+    "or_vendor_id": "",
+    "or_brand_id": "",
+    "or_name": "",
+    "or_status": "",
+    "or_dicount_type": "", // Fixed|Parcentage
+    "or_stock": "",
+    "or_unit": "",
+    "or_minimum_order": "",
+ 
+    "or_start_offer": "", // only Date
+    "or_end_offer": "", // Only Date
+ 
+    "or_range_start_from_offer": "", // Only Date
+    "or_range_start_to_offer": "", // Only Date
+ 
+    "or_range_end_from_offer": "", // Only Date
+    "or_range_end_to_offer": "", // Only Date
+ 
+    "or_category":[], // array
+    "or_regular_price_range": "", // 0,100
+    "or_current_price_range": "", // 0,100
+ 
+}
+
+
+
+---------------------------------------Details of single Product---------------------------------------
+https://ecom.coderorbit.com/public/api/admin/{{app_token}}/product/{{id}}
+headers:{ 
+    "Accept": "application/json"    
+    "Authorization" : `Bearer ${token}`
+}
+
+#########<<<<<Response>>>>>#########
+{
+    "id": 76,
+    "unique_id": "BGIit29G9dFFhxX",
+    "category": [
+        114,
+        91
+    ],
+    "brand_id": 1,
+    "vendor_id": 3,
+    "country_id": 18,
+    "district_id": 1,
+    "police_station_id": 496,
+    "name": "Demo Product 02",
+    "slug": "demo_product_02_BGIit29G9dFFhxX",
+    "icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+    "icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+    "feature": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+    "feature_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+    "gallery": [
+        "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+        "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+        "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+    ],
+    "gallery_small": [
+        "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+        "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+        "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+    ],
+    "sequence": null,
+    "description": {
+        "time": 1737356783680,
+        "blocks": [
+            {
+                "id": "IbkwGuyZRy",
+                "type": "paragraph",
+                "data": {
+                    "text": "Sampleeee"
+                }
+            }
+        ],
+        "version": "2.29.1"
+    },
+    "attributes": {
+        "colors": "White,Black",
+        "sizes": "S_40,M_42,L_44"
+    },
+    "minimum_order": 2,
+    "start_offer": "2024-12-31 18:00:37",
+    "end_offer": "2025-01-30 18:00:37",
+    "extend_props": [],
+    "status": 1,
+    "shipping_cost": null,
+    "regular_price": 399,
+    "current_price": 299,
+    "discount": null,
+    "discount_type": 1,
+    "stock": 17,
+    "seo_tag": "Demo,Premium,Super,Trending",
+    "seo_description": "This is a seo short description for demo product 02",
+    "additional": [
+        {
+            "id": 192,
+            "additional_key": "76_white_s_40",
+            "product_id": 76,
+            "unique_id": "76_white_s_40",
+            "slug": "76_white",
+            "color": "White",
+            "size": "S_40",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        },
+        {
+            "id": 193,
+            "additional_key": "76_white_m_42",
+            "product_id": 76,
+            "unique_id": "76_white_m_42",
+            "slug": "76_white",
+            "color": "White",
+            "size": "M_42",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        },
+        {
+            "id": 194,
+            "additional_key": "76_white_l_44",
+            "product_id": 76,
+            "unique_id": "76_white_l_44",
+            "slug": "76_white",
+            "color": "White",
+            "size": "L_44",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        },
+        {
+            "id": 195,
+            "additional_key": "76_black_s_40",
+            "product_id": 76,
+            "unique_id": "76_black_s_40",
+            "slug": "76_black",
+            "color": "Black",
+            "size": "S_40",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        },
+        {
+            "id": 196,
+            "additional_key": "76_black_m_42",
+            "product_id": 76,
+            "unique_id": "76_black_m_42",
+            "slug": "76_black",
+            "color": "Black",
+            "size": "M_42",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        },
+        {
+            "id": 197,
+            "additional_key": "76_black_l_44",
+            "product_id": 76,
+            "unique_id": "76_black_l_44",
+            "slug": "76_black",
+            "color": "Black",
+            "size": "L_44",
+            "regular_price": 399,
+            "current_price": 299,
+            "discount": null,
+            "discount_type": 1,
+            "stock": 0,
+            "status": 1,
+            "stock_status": 1,
+            "color_galleries": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2025-01-20T07:06:39.000000Z",
+            "updated_at": "2025-01-20T07:06:39.000000Z"
+        }
+    ],
+    "shipping": null,
+    "payment_method": null,
+    "created_by": {
+        "id": 1,
+        "role_id": 1,
+        "country_id": 18,
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "extend_props": {
+            "address": null,
+            "city_id": 1,
+            "thana_id": 494
+        },
+        "email_verified_at": null,
+        "created_at": "2023-09-16T20:19:46.000000Z",
+        "updated_at": "2025-01-07T14:41:12.000000Z",
+        "unique_id": "8660998812",
+        "otp": 874613,
+        "status": 1,
+        "description": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "deleted_at": null
+    },
+    "updated_by": {
+        "id": 1,
+        "role_id": 1,
+        "country_id": 18,
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "extend_props": {
+            "address": null,
+            "city_id": 1,
+            "thana_id": 494
+        },
+        "email_verified_at": null,
+        "created_at": "2023-09-16T20:19:46.000000Z",
+        "updated_at": "2025-01-07T14:41:12.000000Z",
+        "unique_id": "8660998812",
+        "otp": 874613,
+        "status": 1,
+        "description": null,
+        "created_by": 0,
+        "updated_by": 0,
+        "deleted_at": null
+    },
+    "created_at": "2025-01-20T05:49:00.000000Z",
+    "updated_at": "2025-01-20T07:06:39.000000Z",
+    "deleted_at": null,
+    "categories": [
+        {
+            "id": 114,
+            "unique_id": "8ghtcbgg3yKFoM5",
+            "parent_id": 0,
+            "name": "Mobile",
+            "slug": "mobile_8ghtcbgg3yKFoM5",
+            "sequence": null,
+            "commission": 0,
+            "commission_type": "fixed",
+            "icon": null,
+            "thumbnails": null,
+            "banner": null,
+            "description": "mobile",
+            "status": 0,
+            "extend_props": {
+                "sidebar": "menu"
+            },
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2024-11-10T10:32:26.000000Z",
+            "updated_at": "2024-11-10T10:32:26.000000Z",
+            "pivot": {
+                "product_id": 76,
+                "category_id": 114
+            }
+        },
+        {
+            "id": 91,
+            "unique_id": "KKL367124890",
+            "parent_id": 0,
+            "name": "Accessories",
+            "slug": "accessories",
+            "sequence": 0,
+            "commission": 150,
+            "commission_type": "fixed",
+            "icon": null,
+            "thumbnails": null,
+            "banner": null,
+            "description": "Accessories",
+            "status": 1,
+            "extend_props": null,
+            "created_by": 10,
+            "updated_by": 10,
+            "created_at": "2023-01-17T04:41:05.000000Z",
+            "updated_at": "2023-01-17T04:41:05.000000Z",
+            "pivot": {
+                "product_id": 76,
+                "category_id": 91
+            }
+        }
+    ],
+    "additional_media": [
+        {
+            "id": 108,
+            "product_id": 76,
+            "slug": "76_white",
+            "color_icon": "https://lh3.googleusercontent.com/d/1ULGLRqEZmnDO9U2pKveQrITlNVjc2_y1",
+            "color_icon_small": "https://lh3.googleusercontent.com/d/1pInsFnGHbFkhF1eb9l5_ktr16s6slsc6",
+            "color_thumbnails_small": "https://lh3.googleusercontent.com/d/1r3-UdDBFcr7jl4qzbkREGsGP0r86dVEi",
+            "color_thumbnails": "https://lh3.googleusercontent.com/d/1yjCYPTfYluugwBPaUEAncgFvC57x4-ry",
+            "color_galleries": [
+                "https://lh3.googleusercontent.com/d/1NGk1PYoZXm-_JvQbQeaTRxmDnuT3wjDn",
+                "https://lh3.googleusercontent.com/d/17l0BNoV4AW1YmdnU880jB_IACH6qud7_",
+                "https://lh3.googleusercontent.com/d/1fxWdGAA4t4Xx9eGpsd4VIfY8z6tlS4fF"
+            ],
+            "color_galleries_small": [
+                "https://lh3.googleusercontent.com/d/1_8PUCf-RRuWgLk63AVpxJRa456DEWIYT",
+                "https://lh3.googleusercontent.com/d/1Dav_ccTfBUQIyjd5Few6fpx4Bpoitx4r",
+                "https://lh3.googleusercontent.com/d/11NJDlv_5w3OsVqynirJVvqJkEGk2Mudh"
+            ]
+        },
+        {
+            "id": 118,
+            "product_id": 76,
+            "slug": "76_black",
+            "color_icon": null,
+            "color_icon_small": null,
+            "color_thumbnails_small": null,
+            "color_thumbnails": null,
+            "color_galleries": null,
+            "color_galleries_small": null
+        }
+    ],
+    "brand": {
+        "id": 1,
+        "unique_id": "sLJvIENyg100Pxk",
+        "parent_id": null,
+        "name": "Itel",
+        "slug": "itel",
+        "banner": "https://lh3.googleusercontent.com/d/1DCjwkGGGlcNG_Kp0SmJTou4lb-T7qvlN",
+        "icon": "https://lh3.googleusercontent.com/d/1no2rBnsY5n4heay10UwDhqJtCpuwZOSm",
+        "thumbnails": "https://lh3.googleusercontent.com/d/1sAx_4uHpjJiUnoHK_x8YD3TFVQQdWBTl",
+        "commission": 10,
+        "commission_type": "fixed",
+        "status": 1,
+        "description": "this is description",
+        "extend_props": {
+            "test": "theis extend props",
+            "test2": "theis extend props 02"
+        },
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2023-03-16T16:25:43.000000Z",
+        "updated_at": "2024-11-03T00:46:27.000000Z"
+    },
+    "vendor": {
+        "id": 3,
+        "unique_id": "CVELejvhLEhWLi7",
+        "user_id": null,
+        "name": "Sami",
+        "slug": "sami",
+        "icon": null,
+        "thumbnails": null,
+        "banner": null,
+        "description": null,
+        "status": 1,
+        "extend_props": [],
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2025-01-06T14:03:23.000000Z",
+        "updated_at": "2025-01-06T14:03:36.000000Z"
+    },
+    "country": {
+        "id": 18,
+        "sortname": "BD",
+        "name": "Bangladesh",
+        "status": 1,
+        "phonecode": 880,
+        "added_by": 1,
+        "updated_by": 1,
+        "created_at": null,
+        "updated_at": null
+    },
+    "district": {
+        "id": 1,
+        "country_id": 18,
+        "name": "Dhaka",
+        "bn_name": "ঢাকা",
+        "lat": "23.7115253",
+        "lon": "90.4111451",
+        "website": "www.dhaka.gov.bd",
+        "created_at": "2015-09-12T16:33:27.000000Z",
+        "updated_at": "2015-09-12T16:36:20.000000Z"
+    },
+    "police_station": {
+        "id": 496,
+        "district_id": 1,
+        "name": "Banani",
+        "bn_name": "1",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-10-10T02:03:48.000000Z",
+        "updated_at": "2016-04-05T18:48:39.000000Z"
+    },
+    "referrals": [],
+    "feedbacks": [],
+    "bundles": []
+}
